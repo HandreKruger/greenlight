@@ -2,7 +2,7 @@
 
 class UserMailerPreview < ActionMailer::Preview
   def initialize(_params)
-    @logo = "https://raw.githubusercontent.com/bigbluebutton/HandreKruger/master/app/assets/images/logo_with_text.png"
+    @logo = "https://github.com/HandreKruger/greenlight/blob/master/app/assets/images/bbb_logo.png"
     @color = "#467fcf"
   end
 
@@ -55,7 +55,7 @@ class UserMailerPreview < ActionMailer::Preview
     user = User.first
     role = Role.first
     url = "http://example.com"
-    logo_image = "https://raw.githubusercontent.com/bigbluebutton/HandreKruger/master/app/assets/images/logo_with_text.png"
+    logo_image = "https://github.com/HandreKruger/greenlight/blob/master/app/assets/images/bbb_logo.png"
     user_color = "#467fcf"
     UserMailer.user_promoted(user, role, url, logo_image, user_color)
   end
@@ -66,7 +66,7 @@ class UserMailerPreview < ActionMailer::Preview
     user = User.first
     role = Role.first
     url = "http://example.com"
-    logo_image = "https://raw.githubusercontent.com/bigbluebutton/HandreKruger/master/app/assets/images/logo_with_text.png"
+    logo_image = "https://github.com/HandreKruger/greenlight/blob/master/app/assets/images/bbb_logo.png"
     user_color = "#467fcf"
     UserMailer.user_demoted(user, role, url, logo_image, user_color)
   end
